@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -7,7 +9,7 @@ a {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ul {
@@ -30,9 +32,10 @@ img {
 
 .btn {
   display: inline-block;
-  padding: 15px 16px;
-  font-size: 12px;
+  padding: 15px 30px;
+  font-size: 16px;
   line-height: 1;
+  font-weight: 600;
   text-transform: uppercase;
   color: white;
   background-color: #3172b9;
@@ -46,20 +49,31 @@ img {
 /* Header */
 .header {
   height: 110px;
+  border-bottom: 1px solid #e4e4e4;
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
 }
-
-.logo {
-  margin-right: auto;
-}
-
 .nav-list {
   display: flex;
+  margin: auto;
+}
+
+.nav-item {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.nav-link {
+  color: #1c1c1c;
+}
+
+.nav-item.is-active .nav-link {
+  color: #3172b9;
 }
 
 .nav-item:not(:last-child) {
@@ -67,17 +81,22 @@ img {
 }
 
 .header-btn {
-  margin-left: 80px;
+  margin-left: 40px;
 }
 
 /* Hero */
+.section-hero {
+  background: url("/img/hero.jpg") right center no-repeat white;
+  background-size: contain;
+}
+
 .hero-container {
-  margin-top: 120px;
-  margin-bottom: 130px;
+  padding-top: 120px;
+  padding-bottom: 130px;
 }
 
 .hero-content {
-  max-width: 50%;
+  max-width: 44%;
 }
 
 .section-hero-description {
@@ -156,16 +175,38 @@ img {
   margin-top: 40px;
 }
 
-.section-contacts-item:not(:last-child) {
+.section-contacts-item {
   flex: 1 1 33.33%;
-  margin-right: 170px;
 }
 
 .section-contacts-info {
-  margin-top: 30px;
-  width: 250px ;
+  max-width: 250px;
 }
 
+.section-contacts-icon {
+  display: block;
+  height: 26px;
+  margin-bottom: 25px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-color: transparent;
+}
+
+.contacts-icon-gps {
+  background-image: url("/img/gps.png");
+}
+
+.contacts-icon-phone {
+  background-image: url("/img/phone.png");
+}
+.contacts-icon-mail {
+  background-image: url("/img/mail.png");
+}
+
+.section-contacts-heading {
+  display: block;
+  margin-bottom: 40px;
+}
 /* Footer */
 
 .footer {
@@ -175,12 +216,22 @@ img {
 .footer-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 100%;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 20px;
 }
 
 .footer-right {
   display: flex;
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .footer-nav-list {
