@@ -43,6 +43,10 @@ img {
   cursor: pointer;
 }
 
+.btn.btn-big {
+  padding: 20px 60px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -99,12 +103,44 @@ img {
   max-width: 44%;
 }
 
+.section-hero-heading {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 300;
+  color: #1c1c1c;
+}
+.section-hero-action {
+  display: inline-block;
+}
 .section-hero-description {
   margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 25px;
+  color: #787878;
 }
 
 .section-hero-btn-description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 10px;
+  font-size: 11px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  color: #787878;
+}
+
+.section-hero-ssl-icon {
+  display: inline-block;
+  width: 13px;
+  height: 17px;
+  margin-right: 10px;
+  background: url("/img/ssl.svg") center center no-repeat transparent;
+  background-size: contain;
+  transform: translateY(-1px);
 }
 
 /* What we do */
